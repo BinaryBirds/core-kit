@@ -8,12 +8,13 @@
 #if canImport(AppKit)
 public extension NSImage {
 
-    static func from(color: NSColor) -> NSImage {
-        let image = NSImage(size: NSSize(width: 1, height: 1))
+    convenience init(color: NSColor) {
+        let size = CGSize(width: 1, height: 1)
+        let image = NSImage(size: size)
         image.lockFocus()
-        color.drawSwatch(in: NSRect(x: 0, y: 0, width: 1, height: 1))
+        color.drawSwatch(in: CGRect(origin: .zero, size: size))
         image.unlockFocus()
-        return image
+        self.init(cgImage: image.cgImage!, size: size)
     }
 }
 #endif

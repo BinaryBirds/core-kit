@@ -8,15 +8,16 @@
 #if canImport(UIKit)
 public extension UIImage {
 
-    static func from(color: UIColor) -> UIImage {
-        let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
+    convenience init(color: UIColor) {
+        let size = CGSize(width: 1, height: 1)
+        let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()!
         context.setFillColor(color.cgColor)
         context.fill(rect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return newImage!
+        self.init(cgImage: newImage!.cgImage!)
     }
 }
 #endif
