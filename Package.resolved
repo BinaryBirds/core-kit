@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "apple-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/binarybirds/apple-kit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "46d3abd494667ffba5cd363ae718c43ee87daf0c"
+      }
+    }
+  ],
+  "version" : 2
+}

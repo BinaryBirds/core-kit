@@ -13,10 +13,11 @@ let package = Package(
         .library(name: "CoreKit", targets: ["CoreKit"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/binarybirds/apple-kit", branch: "main"),
     ],
     targets: [
         .target(name: "CoreKit", dependencies: [
-            
+            .product(name: "AppleKit", package: "apple-kit"),
         ]),
         .testTarget(name: "CoreKitTests", dependencies: [
             .target(name: "CoreKit")
