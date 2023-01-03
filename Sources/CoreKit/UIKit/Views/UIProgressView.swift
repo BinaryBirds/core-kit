@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleProgressView: UIProgressView {
+open class ProgressView: UIProgressView {
     
     public init() {
         super.init(frame: .zero)

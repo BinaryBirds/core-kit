@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleLabel: UILabel {
+open class Label: UILabel {
     
     public init() {
         super.init(frame: .zero)

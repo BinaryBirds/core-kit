@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleSlider: NSSlider {
+open class Slider: NSSlider {
     
     public init() {
         super.init(frame: .zero)

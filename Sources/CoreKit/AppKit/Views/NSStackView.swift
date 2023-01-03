@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleStackView: NSStackView {
+open class StackView: NSStackView {
     
     public init() {
         super.init(frame: .zero)

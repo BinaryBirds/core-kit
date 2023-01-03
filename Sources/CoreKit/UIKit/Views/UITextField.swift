@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleTextField: UITextField {
+open class TextField: UITextField {
 
     public init() {
         super.init(frame: .zero)

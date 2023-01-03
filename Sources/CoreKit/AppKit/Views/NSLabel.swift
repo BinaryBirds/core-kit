@@ -6,10 +6,18 @@
 //
 
 #if canImport(AppKit)
-open class AppleLabel: AppleTextField {
+open class NSLabel: NSTextField {
 
-    public override init() {
-        super.init()
+    public var numberOfLines: Int {
+        get { maximumNumberOfLines }
+        set { maximumNumberOfLines = newValue }
+    }
+}
+
+open class Label: NSLabel {
+
+    public init() {
+        super.init(frame: .zero)
 
         drawsBackground = false
         isBordered = false
@@ -17,11 +25,23 @@ open class AppleLabel: AppleTextField {
 //        alignment = .left
         maximumNumberOfLines = 1
         lineBreakMode = .byTruncatingTail
+
+        initialize()
     }
 
-    public var numberOfLines: Int {
-        get { maximumNumberOfLines }
-        set { maximumNumberOfLines = newValue }
+    @available(*, unavailable)
+    private override init(frame: CGRect) {
+        fatalError("unavailable")
     }
+
+    @available(*, unavailable)
+    public required init?(coder: NSCoder) {
+        fatalError("unavailable")
+    }
+
+    open func initialize() {
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+        
 }
 #endif

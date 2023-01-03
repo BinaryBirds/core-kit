@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleStepper: UIStepper {
+open class Stepper: UIStepper {
     
     public init() {
         super.init(frame: .zero)

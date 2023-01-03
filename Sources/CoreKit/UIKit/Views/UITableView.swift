@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleTableView: UITableView {
+open class TableView: UITableView {
     
     public init(style: UITableView.Style = .plain) {
         super.init(frame: .zero, style: style)

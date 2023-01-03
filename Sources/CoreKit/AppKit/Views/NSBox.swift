@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleBox: NSBox {
+open class Box: NSBox {
     
     public init() {
         super.init(frame: .zero)

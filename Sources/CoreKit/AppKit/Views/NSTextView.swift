@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleTextView: NSTextView {
+open class TextView: NSTextView {
 
     public init(textContainer: NSTextContainer? = nil) {
         super.init(frame: .zero, textContainer: textContainer)

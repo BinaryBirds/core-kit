@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleTableView: NSTableView {
+open class TableView: NSTableView {
     
     public init() {
         super.init(frame: .zero)

@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleSegmentedControl: UISegmentedControl {
+open class SegmentedControl: UISegmentedControl {
     
     public init() {
         super.init(frame: .zero)

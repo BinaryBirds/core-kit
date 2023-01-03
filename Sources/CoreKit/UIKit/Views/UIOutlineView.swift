@@ -6,7 +6,30 @@
 //
 
 #if canImport(UIKit)
-open class AppleOutlineView: AppleTableView {
+open class UIOutlineView: UITableView {
+    
+}
 
+open class OutlineView: UIOutlineView {
+
+    public init(style: UITableView.Style = .plain) {
+        super.init(frame: .zero, style: style)
+
+        initialize()
+    }
+
+    @available(*, unavailable)
+    private override init(frame: CGRect, style: UITableView.Style) {
+        fatalError("unavailable")
+    }
+
+    @available(*, unavailable)
+    public required init(coder: NSCoder) {
+        fatalError("unavailable")
+    }
+
+    open func initialize() {
+        translatesAutoresizingMaskIntoConstraints = false
+    }
 }
 #endif

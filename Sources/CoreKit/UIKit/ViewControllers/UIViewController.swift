@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleViewController: UIViewController {
+open class ViewController: UIViewController {
 
     public init() {
         super.init(nibName: nil, bundle: nil)

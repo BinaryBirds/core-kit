@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleScrollView: NSScrollView {
+open class ScrollView: NSScrollView {
     
     public init() {
         super.init(frame: .zero)

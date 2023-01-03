@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleViewController: NSViewController {
+open class ViewController: NSViewController {
     
     var observer: NSKeyValueObservation?
     
@@ -40,7 +40,7 @@ open class AppleViewController: NSViewController {
     }
 
     open func loadMainView() {
-        view = AppleView()
+        view = View()
     }
 
     open override func loadView() {

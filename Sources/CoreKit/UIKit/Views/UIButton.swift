@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleButton: UIButton {
+open class Button: UIButton {
     
     public init() {
         super.init(frame: .zero)

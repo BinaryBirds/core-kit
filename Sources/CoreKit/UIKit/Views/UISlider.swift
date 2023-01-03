@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleSlider: UISlider {
+open class Slider: UISlider {
     
     public init() {
         super.init(frame: .zero)

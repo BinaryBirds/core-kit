@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleImageView: NSImageView {
+open class ImageView: NSImageView {
     
     public init() {
         super.init(frame: .zero)

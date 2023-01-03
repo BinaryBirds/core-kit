@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleCollectionView: NSCollectionView {
+open class CollectionView: NSCollectionView {
     
     public init(layout: NSCollectionViewLayout) {
         super.init(frame: .zero)

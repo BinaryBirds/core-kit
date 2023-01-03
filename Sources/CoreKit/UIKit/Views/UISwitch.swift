@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleSwitch: UISwitch {
+open class Switch: UISwitch {
     
     public init() {
         super.init(frame: .zero)
@@ -29,3 +29,4 @@ open class AppleSwitch: UISwitch {
     }
 }
 #endif
+

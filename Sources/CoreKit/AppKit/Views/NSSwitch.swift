@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleSwitch: NSSwitch {
+open class Switch: NSSwitch {
     
     public init() {
         super.init(frame: .zero)

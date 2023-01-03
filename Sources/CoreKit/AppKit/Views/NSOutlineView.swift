@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleOutlineView: NSOutlineView {
+open class OutlineView: NSOutlineView {
     
     public init() {
         super.init(frame: .zero)

@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleCollectionView: UICollectionView {
+open class CollectionView: UICollectionView {
     
     public init(layout: UICollectionViewLayout) {
         super.init(frame: .zero, collectionViewLayout: layout)

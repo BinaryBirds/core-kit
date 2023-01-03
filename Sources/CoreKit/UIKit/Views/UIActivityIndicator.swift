@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleActivityIndicator: UIActivityIndicatorView {
+open class ActivityIndicator: UIActivityIndicatorView {
     
     public init() {
         super.init(frame: .zero)

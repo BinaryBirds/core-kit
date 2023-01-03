@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleSegmentedControl: NSSegmentedControl {
+open class SegmentedControl: NSSegmentedControl {
 
     public init() {
         super.init(frame: .zero)
