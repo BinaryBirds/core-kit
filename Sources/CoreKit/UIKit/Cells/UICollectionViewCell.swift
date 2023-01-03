@@ -6,7 +6,7 @@
 //
 
 #if canImport(UIKit)
-open class AppleCollectionViewCell: UICollectionViewCell {
+open class CollectionViewCell: UICollectionViewCell {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)

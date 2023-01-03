@@ -6,7 +6,7 @@
 //
 
 #if canImport(AppKit)
-open class AppleCollectionViewCell: NSCollectionViewItem {
+open class CollectionViewCell: NSCollectionViewItem {
    
     public override init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)

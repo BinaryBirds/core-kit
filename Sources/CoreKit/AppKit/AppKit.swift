@@ -25,11 +25,16 @@ public typealias AppleButton = NSButton
 public typealias AppleBox = NSBox
 public typealias AppleActivityIndicator = NSActivityIndicatorView
 
-// MARK: - components
+// MARK: - cells
+public typealias AppleTableViewCell = NSTableCellView
+public typealias AppleCollectionViewCell = NSCollectionViewItem
+
+// MARK: - constraints
 public typealias AppleLayoutConstraint = NSLayoutConstraint
 public typealias AppleLayoutAnchorRepresentable = NSLayoutAnchorRepresentable
 public typealias AppleEdgeInsets = NSEdgeInsets
 
+// MARK: - components
 public typealias AppleColor = NSColor
 public typealias AppleImage = NSImage
 public typealias AppleBezierPath = NSBezierPath
