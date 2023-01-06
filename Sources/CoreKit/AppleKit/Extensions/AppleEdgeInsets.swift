@@ -7,11 +7,11 @@
 
 public extension AppleEdgeInsets {
 
-    init(all value: CGFloat) {
+    init(all value: CGFloat = 0) {
         self.init(top: value, left: value, bottom: value, right: value)
     }
 
-    init(horizontal: CGFloat, vertical: CGFloat) {
+    init(horizontal: CGFloat = 0, vertical: CGFloat = 0) {
         self.init(top: vertical, left: horizontal, bottom: vertical, right: horizontal)
     }
 }
