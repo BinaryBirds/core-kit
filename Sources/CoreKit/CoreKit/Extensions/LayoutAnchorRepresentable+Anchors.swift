@@ -118,14 +118,14 @@ public extension LayoutAnchorRepresentable {
 
     func widthAnchor(
         _ other: LayoutAnchorRepresentable,
-        multiplier: CGFloat = 1.0
+        multiplier: CGFloat
     ) -> NSLayoutConstraint {
         widthAnchor.constraint(equalTo: other.widthAnchor, multiplier: multiplier)
     }
 
     func heightAnchor(
         _ other: LayoutAnchorRepresentable,
-        multiplier: CGFloat = 1.0
+        multiplier: CGFloat
     ) -> NSLayoutConstraint {
         heightAnchor.constraint(equalTo: other.heightAnchor, multiplier: multiplier)
     }
